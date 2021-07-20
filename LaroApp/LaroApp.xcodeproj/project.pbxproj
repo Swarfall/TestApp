@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1588A76026A3128400484BC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1588A75F26A3128400484BC3 /* Constants.swift */; };
+		15A4144E26A1E01400E87B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4144D26A1E01400E87B85 /* AppDelegate.swift */; };
+		15A4145026A1E01400E87B85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4144F26A1E01400E87B85 /* SceneDelegate.swift */; };
+		15A4145226A1E01400E87B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4145126A1E01400E87B85 /* ViewController.swift */; };
+		15A4145526A1E01400E87B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A4145326A1E01400E87B85 /* Main.storyboard */; };
+		15A4145726A1E01500E87B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A4145626A1E01500E87B85 /* Assets.xcassets */; };
+		15A4145A26A1E01500E87B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A4145826A1E01500E87B85 /* LaunchScreen.storyboard */; };
+		15A4146326A1F77E00E87B85 /* ApiRequestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4146226A1F77E00E87B85 /* ApiRequestPath.swift */; };
+		15A4146526A1F79500E87B85 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4146426A1F79500E87B85 /* Errors.swift */; };
+		15A4146826A1F82000E87B85 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4146726A1F82000E87B85 /* NetworkClient.swift */; };
+		15A4146D26A201FF00E87B85 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4146C26A201FF00E87B85 /* HTTPMethod.swift */; };
+		15A4147026A205A000E87B85 /* Giphy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4146F26A205A000E87B85 /* Giphy.swift */; };
+		15A4147326A208B600E87B85 /* Storyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4147226A208B600E87B85 /* Storyboard+Extension.swift */; };
+		15A4147526A2090D00E87B85 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4147426A2090D00E87B85 /* ImageLoader.swift */; };
+		15A4147A26A209D600E87B85 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4147926A209D600E87B85 /* AppCoordinator.swift */; };
+		15A4147E26A20A7000E87B85 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4147D26A20A7000E87B85 /* BaseViewController.swift */; };
+		15A4148426A20BCB00E87B85 /* GiphyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4148226A20BCB00E87B85 /* GiphyCell.swift */; };
+		15A4148526A20BCB00E87B85 /* GiphyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A4148326A20BCB00E87B85 /* GiphyCell.xib */; };
+		15A4148726A20BF300E87B85 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4148626A20BF300E87B85 /* ListViewController.swift */; };
+		15A4148926A20C0300E87B85 /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A4148826A20C0300E87B85 /* ListViewController.storyboard */; };
+		15A4148B26A20C0E00E87B85 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4148A26A20C0E00E87B85 /* ListPresenter.swift */; };
+		15A4148D26A20C1B00E87B85 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4148C26A20C1B00E87B85 /* ListRouter.swift */; };
+		15A4148F26A20C2900E87B85 /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4148E26A20C2900E87B85 /* ListProtocols.swift */; };
+		15A4149126A2A49E00E87B85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149026A2A49E00E87B85 /* DetailViewController.swift */; };
+		15A4149326A2A4A800E87B85 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A4149226A2A4A800E87B85 /* DetailViewController.storyboard */; };
+		15A4149526A2A4B300E87B85 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149426A2A4B300E87B85 /* DetailPresenter.swift */; };
+		15A4149726A2A4BE00E87B85 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149626A2A4BE00E87B85 /* DetailRouter.swift */; };
+		15A4149926A2A4C700E87B85 /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149826A2A4C700E87B85 /* DetailProtocol.swift */; };
+		15A4149E26A2AFC100E87B85 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149D26A2AFC100E87B85 /* PostRequest.swift */; };
+		15A414A026A2C1F600E87B85 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A4149F26A2C1F600E87B85 /* UIImageView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1588A75F26A3128400484BC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15A4144A26A1E01400E87B85 /* LaroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A4144D26A1E01400E87B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15A4144F26A1E01400E87B85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15A4145126A1E01400E87B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15A4145426A1E01400E87B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15A4145626A1E01500E87B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15A4145926A1E01500E87B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15A4145B26A1E01500E87B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15A4146226A1F77E00E87B85 /* ApiRequestPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestPath.swift; sourceTree = "<group>"; };
+		15A4146426A1F79500E87B85 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		15A4146726A1F82000E87B85 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		15A4146C26A201FF00E87B85 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		15A4146F26A205A000E87B85 /* Giphy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giphy.swift; sourceTree = "<group>"; };
+		15A4147226A208B600E87B85 /* Storyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extension.swift"; sourceTree = "<group>"; };
+		15A4147426A2090D00E87B85 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		15A4147926A209D600E87B85 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		15A4147D26A20A7000E87B85 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		15A4148226A20BCB00E87B85 /* GiphyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyCell.swift; sourceTree = "<group>"; };
+		15A4148326A20BCB00E87B85 /* GiphyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiphyCell.xib; sourceTree = "<group>"; };
+		15A4148626A20BF300E87B85 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		15A4148826A20C0300E87B85 /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		15A4148A26A20C0E00E87B85 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		15A4148C26A20C1B00E87B85 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		15A4148E26A20C2900E87B85 /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		15A4149026A2A49E00E87B85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = LaroApp/ViewControllers/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		15A4149226A2A4A800E87B85 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		15A4149426A2A4B300E87B85 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		15A4149626A2A4BE00E87B85 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		15A4149826A2A4C700E87B85 /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
+		15A4149D26A2AFC100E87B85 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		15A4149F26A2C1F600E87B85 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15A4144726A1E01400E87B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A4144126A1E01400E87B85 = {
+			isa = PBXGroup;
+			children = (
+				15A4144C26A1E01400E87B85 /* LaroApp */,
+				15A4144B26A1E01400E87B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15A4144B26A1E01400E87B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A4144A26A1E01400E87B85 /* LaroApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15A4144C26A1E01400E87B85 /* LaroApp */ = {
+			isa = PBXGroup;
+			children = (
+				15A4146126A1F6A400E87B85 /* Helpers */,
+				15A4146626A1F7F900E87B85 /* Services */,
+				15A4146E26A2057D00E87B85 /* Model */,
+				15A4147126A2089D00E87B85 /* Extensions */,
+				15A4147826A209BF00E87B85 /* Flow */,
+				15A4147B26A20A3000E87B85 /* ViewControllers */,
+				15A4144D26A1E01400E87B85 /* AppDelegate.swift */,
+				15A4144F26A1E01400E87B85 /* SceneDelegate.swift */,
+				15A4145126A1E01400E87B85 /* ViewController.swift */,
+				15A4145326A1E01400E87B85 /* Main.storyboard */,
+				15A4145626A1E01500E87B85 /* Assets.xcassets */,
+				15A4145826A1E01500E87B85 /* LaunchScreen.storyboard */,
+				15A4145B26A1E01500E87B85 /* Info.plist */,
+			);
+			path = LaroApp;
+			sourceTree = "<group>";
+		};
+		15A4146126A1F6A400E87B85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15A4146226A1F77E00E87B85 /* ApiRequestPath.swift */,
+				15A4146426A1F79500E87B85 /* Errors.swift */,
+				1588A75F26A3128400484BC3 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15A4146626A1F7F900E87B85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15A4149A26A2AF7C00E87B85 /* Request */,
+				15A4146726A1F82000E87B85 /* NetworkClient.swift */,
+				15A4146C26A201FF00E87B85 /* HTTPMethod.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		15A4146E26A2057D00E87B85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15A4146F26A205A000E87B85 /* Giphy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15A4147126A2089D00E87B85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15A4147226A208B600E87B85 /* Storyboard+Extension.swift */,
+				15A4147426A2090D00E87B85 /* ImageLoader.swift */,
+				15A4149F26A2C1F600E87B85 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15A4147826A209BF00E87B85 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				15A4147926A209D600E87B85 /* AppCoordinator.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		15A4147B26A20A3000E87B85 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15A4147C26A20A4700E87B85 /* BaseViewController */,
+				15A4147F26A20B4900E87B85 /* ListViewController */,
+				15A4148026A20B5200E87B85 /* DetailViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15A4147C26A20A4700E87B85 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15A4147D26A20A7000E87B85 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		15A4147F26A20B4900E87B85 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15A4148126A20B7000E87B85 /* Cell */,
+				15A4148626A20BF300E87B85 /* ListViewController.swift */,
+				15A4148826A20C0300E87B85 /* ListViewController.storyboard */,
+				15A4148A26A20C0E00E87B85 /* ListPresenter.swift */,
+				15A4148C26A20C1B00E87B85 /* ListRouter.swift */,
+				15A4148E26A20C2900E87B85 /* ListProtocols.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		15A4148026A20B5200E87B85 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15A4149026A2A49E00E87B85 /* DetailViewController.swift */,
+				15A4149226A2A4A800E87B85 /* DetailViewController.storyboard */,
+				15A4149426A2A4B300E87B85 /* DetailPresenter.swift */,
+				15A4149626A2A4BE00E87B85 /* DetailRouter.swift */,
+				15A4149826A2A4C700E87B85 /* DetailProtocol.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		15A4148126A20B7000E87B85 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15A4148226A20BCB00E87B85 /* GiphyCell.swift */,
+				15A4148326A20BCB00E87B85 /* GiphyCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		15A4149A26A2AF7C00E87B85 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				15A4149D26A2AFC100E87B85 /* PostRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15A4144926A1E01400E87B85 /* LaroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15A4145E26A1E01500E87B85 /* Build configuration list for PBXNativeTarget "LaroApp" */;
+			buildPhases = (
+				15A4144626A1E01400E87B85 /* Sources */,
+				15A4144726A1E01400E87B85 /* Frameworks */,
+				15A4144826A1E01400E87B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaroApp;
+			productName = LaroApp;
+			productReference = 15A4144A26A1E01400E87B85 /* LaroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15A4144226A1E01400E87B85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					15A4144926A1E01400E87B85 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 15A4144526A1E01400E87B85 /* Build configuration list for PBXProject "LaroApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15A4144126A1E01400E87B85;
+			productRefGroup = 15A4144B26A1E01400E87B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15A4144926A1E01400E87B85 /* LaroApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15A4144826A1E01400E87B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A4145A26A1E01500E87B85 /* LaunchScreen.storyboard in Resources */,
+				15A4145726A1E01500E87B85 /* Assets.xcassets in Resources */,
+				15A4145526A1E01400E87B85 /* Main.storyboard in Resources */,
+				15A4148526A20BCB00E87B85 /* GiphyCell.xib in Resources */,
+				15A4149326A2A4A800E87B85 /* DetailViewController.storyboard in Resources */,
+				15A4148926A20C0300E87B85 /* ListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15A4144626A1E01400E87B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588A76026A3128400484BC3 /* Constants.swift in Sources */,
+				15A4148D26A20C1B00E87B85 /* ListRouter.swift in Sources */,
+				15A4149726A2A4BE00E87B85 /* DetailRouter.swift in Sources */,
+				15A4145226A1E01400E87B85 /* ViewController.swift in Sources */,
+				15A4147A26A209D600E87B85 /* AppCoordinator.swift in Sources */,
+				15A4146526A1F79500E87B85 /* Errors.swift in Sources */,
+				15A4149526A2A4B300E87B85 /* DetailPresenter.swift in Sources */,
+				15A4144E26A1E01400E87B85 /* AppDelegate.swift in Sources */,
+				15A4147E26A20A7000E87B85 /* BaseViewController.swift in Sources */,
+				15A4149126A2A49E00E87B85 /* DetailViewController.swift in Sources */,
+				15A4146D26A201FF00E87B85 /* HTTPMethod.swift in Sources */,
+				15A4149926A2A4C700E87B85 /* DetailProtocol.swift in Sources */,
+				15A414A026A2C1F600E87B85 /* UIImageView+Extension.swift in Sources */,
+				15A4147526A2090D00E87B85 /* ImageLoader.swift in Sources */,
+				15A4145026A1E01400E87B85 /* SceneDelegate.swift in Sources */,
+				15A4148B26A20C0E00E87B85 /* ListPresenter.swift in Sources */,
+				15A4147026A205A000E87B85 /* Giphy.swift in Sources */,
+				15A4146826A1F82000E87B85 /* NetworkClient.swift in Sources */,
+				15A4147326A208B600E87B85 /* Storyboard+Extension.swift in Sources */,
+				15A4146326A1F77E00E87B85 /* ApiRequestPath.swift in Sources */,
+				15A4149E26A2AFC100E87B85 /* PostRequest.swift in Sources */,
+				15A4148F26A20C2900E87B85 /* ListProtocols.swift in Sources */,
+				15A4148726A20BF300E87B85 /* ListViewController.swift in Sources */,
+				15A4148426A20BCB00E87B85 /* GiphyCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15A4145326A1E01400E87B85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A4145426A1E01400E87B85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15A4145826A1E01500E87B85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A4145926A1E01500E87B85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15A4145C26A1E01500E87B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15A4145D26A1E01500E87B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15A4145F26A1E01500E87B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9X3NJANTM;
+				INFOPLIST_FILE = LaroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SavitskyiViacheslav.LaroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		15A4146026A1E01500E87B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9X3NJANTM;
+				INFOPLIST_FILE = LaroApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SavitskyiViacheslav.LaroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15A4144526A1E01400E87B85 /* Build configuration list for PBXProject "LaroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A4145C26A1E01500E87B85 /* Debug */,
+				15A4145D26A1E01500E87B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15A4145E26A1E01500E87B85 /* Build configuration list for PBXNativeTarget "LaroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A4145F26A1E01500E87B85 /* Debug */,
+				15A4146026A1E01500E87B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15A4144226A1E01400E87B85 /* Project object */;
+}
